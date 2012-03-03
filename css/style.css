@@ -1,0 +1,108 @@
+body {
+	background:#F3F3EC;
+	color:#DEDED6;
+	text-align:center;
+	font:bold 14px Helvetica, Arial, sans-serif;
+}
+a {
+	color:#DEDED6;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+#bar {
+	height:4px;
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	background:#DEDED6;
+}
+#core {
+	margin:-170px 0 0 -263px;
+	position:absolute;
+	top:50%;
+	left:50%;
+}
+	#card-link {
+		font-size:0;
+	}
+		#link-area {
+			width:525px;
+			height:300px;
+			position:absolute;
+			top:0;
+		}
+	#card {
+		width:525px;
+		height:300px;
+		position:relative;
+	}
+		.card-0 {
+			background:url(../images/garethwalters-rs-grey.png) no-repeat;
+		}
+		.card-1 {
+			background:url(../images/garethwalters-rs-blue.png) no-repeat;
+		}
+		.card-2 {
+			background:url(../images/garethwalters-rs-red.png) no-repeat;
+		}
+		.card-3 {
+			background:url(../images/garethwalters-rs-yellow.png) no-repeat;
+		}
+		#select-lt {
+			left:-32px;
+			top:-32px;
+		}
+		#select-rt {
+			right:-32px;
+			top:-32px;
+		}
+		#select-lb {
+			left:-32px;
+			bottom:-32px;
+		}
+		#select-rb {
+			right:-32px;
+			bottom:-32px;
+		}
+		.selector {
+			width:32px;
+			height:32px;
+			position:absolute;
+			opacity:0;
+			filter:alpha(opacity=0);
+		}
+			.select-line {
+				position:absolute;
+				background:#DEDED6;
+			}
+			.select-top {
+				width:100%;
+				height:8px;
+				top:0;
+				left:0;
+			}
+			.select-right {
+				width:8px;
+				height:100%;
+				top:0;
+				right:0;
+			}
+			.select-bottom {
+				width:100%;
+				height:8px;
+				bottom:0;
+				left:0;
+			}
+			.select-left {
+				width:8px;
+				height:100%;
+				top:0;
+				left:0;
+			}
+	#additional {
+		padding:32px;
+		cursor:default;
+	}
