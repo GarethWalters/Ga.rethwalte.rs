@@ -1,108 +1,153 @@
+* {
+	margin:0;
+	padding:0;
+}
+html, body {
+	width:100%;
+	height:100%;
+}
 body {
-	background:#F3F3EC;
-	color:#DEDED6;
+	min-height:212px;
+	background:#444;
+	color:#FFF;
 	text-align:center;
-	font:bold 14px Helvetica, Arial, sans-serif;
+	font:14px Helvetica, Arial, sans-serif;
+	text-shadow:0 -1px 0 #222;
+	line-height:22px;
+}
+p {
+	margin-bottom:32px;
 }
 a {
-	color:#DEDED6;
+	color:#FFF;
 	text-decoration:none;
 }
 a:hover {
 	text-decoration:underline;
 }
 #bar {
-	height:4px;
+	height:8px;
 	width:100%;
 	position:fixed;
 	top:0;
 	left:0;
-	background:#DEDED6;
+	background:#222;
+	opacity:0.14;
+	filter:alpha(opacity=14);
 }
 #core {
-	margin:-170px 0 0 -263px;
+	width:100%;
+	height:154px;
+	margin:-177px 0 0 0;
 	position:absolute;
 	top:50%;
-	left:50%;
 }
 	#card-link {
 		font-size:0;
 	}
 		#link-area {
-			width:525px;
-			height:300px;
+			width:600px;
+			height:150px;
 			position:absolute;
 			top:0;
 		}
-	#card {
-		width:525px;
-		height:300px;
-		position:relative;
+	#card-holder {
+		width:600px;
+		height:150px;
+		margin:0 auto;
+		display:block;
 	}
-		.card-0 {
-			background:url(../images/garethwalters-rs-grey.png) no-repeat;
-		}
-		.card-1 {
-			background:url(../images/garethwalters-rs-blue.png) no-repeat;
-		}
-		.card-2 {
-			background:url(../images/garethwalters-rs-red.png) no-repeat;
-		}
-		.card-3 {
-			background:url(../images/garethwalters-rs-yellow.png) no-repeat;
-		}
-		#select-lt {
-			left:-32px;
-			top:-32px;
-		}
-		#select-rt {
-			right:-32px;
-			top:-32px;
-		}
-		#select-lb {
-			left:-32px;
-			bottom:-32px;
-		}
-		#select-rb {
-			right:-32px;
-			bottom:-32px;
-		}
-		.selector {
-			width:32px;
-			height:32px;
+		#card {
+			width:600px;
+			height:150px;
 			position:absolute;
-			opacity:0;
-			filter:alpha(opacity=0);
+			top:0;
+			background:url(../images/garethwalters-rs.png) no-repeat;
 		}
-			.select-line {
+			#select-lt {
+				left:-32px;
+				top:-32px;
+			}
+			#select-rt {
+				right:-32px;
+				top:-32px;
+			}
+			#select-lb {
+				left:-32px;
+				bottom:-32px;
+			}
+			#select-rb {
+				right:-32px;
+				bottom:-32px;
+			}
+			.selector {
+				width:32px;
+				height:32px;
 				position:absolute;
-				background:#DEDED6;
+				opacity:0;
+				filter:alpha(opacity=0);
 			}
-			.select-top {
-				width:100%;
-				height:8px;
-				top:0;
-				left:0;
+				.select-line {
+					position:absolute;
+					background:#000;
+				}
+				.select-top {
+					width:100%;
+					height:8px;
+					top:0;
+					left:0;
+				}
+				.select-right {
+					width:8px;
+					height:100%;
+					top:0;
+					right:0;
+				}
+				.select-bottom {
+					width:100%;
+					height:8px;
+					bottom:0;
+					left:0;
+				}
+				.select-left {
+					width:8px;
+					height:100%;
+					top:0;
+					left:0;
+				}
+		#additional {
+			width:568px;
+			margin:20px auto;
+			cursor:default;
+		}
+			#additional-left {
+				width:216px;
+				display:inline-block;
+				text-align:right;
 			}
-			.select-right {
-				width:8px;
-				height:100%;
-				top:0;
-				right:0;
+				.icon {
+					width:16px;
+					height:17px;
+					margin:0 6px;
+					display:inline-block;
+					vertical-align:text-bottom;
+				}
+				#icon-dribbble {
+					background:url(../images/icon-dribbble.png) no-repeat;
+				}
+				#icon-krop {
+					background:url(../images/icon-krop.png) no-repeat;
+				}
+			#additional-right {
+				width:300px;
+/*				margin-left:6px;
+*/				display:inline-block;
+				text-align:left;
+				vertical-align:top;
 			}
-			.select-bottom {
-				width:100%;
-				height:8px;
-				bottom:0;
-				left:0;
-			}
-			.select-left {
-				width:8px;
-				height:100%;
-				top:0;
-				left:0;
-			}
-	#additional {
-		padding:32px;
-		cursor:default;
-	}
+::-moz-selection {
+       background:#000;
+}
+::selection {
+       background:#000;
+}
