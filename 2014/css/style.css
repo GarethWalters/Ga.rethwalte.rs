@@ -1,0 +1,36 @@
+* {
+	margin:0;
+	padding:0;
+}
+html, body {
+	width:100%;
+	height:100%;
+}
+body {
+	background:#07b588;
+	font-family:'HelveticaNeue-Thin', 'Helvetica Neue';
+	font-weight:100;
+	font-size:19px;
+	color:#666;
+	text-align: center;
+	text-rendering: optimizeLegibility;
+}
+h1 {
+	font-family:'HelveticaNeue-Light', 'Helvetica Neue';
+	font-weight:300;
+	font-size:29px;
+	color:#00ba7c;
+	text-rendering: optimizeLegibility;
+}
+.background {
+	background-color: #fffff0;
+}
+.foreground {
+	color: #00ba7c;
+}
+#logo {
+}
+.cell {
+	padding: 50px 10px;
+	text-align: left;
+}
