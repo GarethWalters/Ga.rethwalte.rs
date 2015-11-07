@@ -40,15 +40,15 @@ $(function()
 	var chosenColor;
 	
 	// Always choose blue for the first color (per session.)
-	if ($.cookie('viewed'))
-	{
+	// if ($.cookie('viewed'))
+	// {
 		chosenColor = colors[Math.floor(Math.random() * 3)];
-	}
-	else
-	{
-		chosenColor = colors[1];
-		$.cookie('viewed', 'true');
-	}
+	// }
+	// else
+	// {
+	// 	chosenColor = colors[1];
+	// 	$.cookie('viewed', 'true');
+	// }
 	
 	$('head').append('<link rel="shortcut icon" href="favicon-' + chosenColor + '.ico" type="image/x-icon">');
 	$('body').css('background', '#' + chosenColor);
