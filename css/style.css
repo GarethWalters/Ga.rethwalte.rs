@@ -11,8 +11,10 @@ body {
 	background:#444;
 	color:#FFF;
 	text-align:center;
-	font:14px Helvetica, Arial, sans-serif;
-	text-shadow:0 -1px 0 #222;
+	font:14px/1.5 'HelveticaNeue-Thin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight:200;
+	text-rendering: optimizeLegibility;
+	text-shadow:0 0.5px 0 #222;
 	line-height:22px;
 }
 p {
@@ -26,7 +28,7 @@ a:hover {
 	text-decoration:underline;
 }
 #bar {
-	height:8px;
+	height:4px;
 	width:100%;
 	position:fixed;
 	top:0;
@@ -38,7 +40,7 @@ a:hover {
 #core {
 	width:100%;
 	height:154px;
-	margin:-177px 0 0 0;
+	margin:-77px 0 0 0;
 	position:absolute;
 	top:50%;
 }
@@ -46,23 +48,24 @@ a:hover {
 		font-size:0;
 	}
 		#link-area {
-			width:600px;
-			height:150px;
+			width:300px;
+			height:75px;
 			position:absolute;
 			top:0;
 		}
 	#card-holder {
-		width:600px;
-		height:150px;
+		width:300px;
+		height:75px;
 		margin:0 auto;
 		display:block;
+		text-align:left;
 	}
 		#card {
-			width:600px;
-			height:150px;
+			width:300px;
+			height:75px;
 			position:absolute;
 			top:0;
-			background:url(../images/garethwalters-rs.png) no-repeat;
+			/*background:url(../images/garethwalters-rs.png) no-repeat;*/
 		}
 			#select-lt {
 				left:-32px;
@@ -117,7 +120,7 @@ a:hover {
 				}
 		#additional {
 			width:568px;
-			margin:20px auto;
+			margin:40px auto 20px;
 			cursor:default;
 		}
 			#additional-left {

@@ -60,7 +60,7 @@ $(function()
 		rgb[i] = Math.max(0, rgb[i] - 40);
 	}
 	var darkColor = 'rgb(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ')';
-	$('#additional').css('text-shadow', '0 -1px 0 ' + darkColor);
+	$('#additional').css('text-shadow', '0 0.5px 0 ' + darkColor);
 	$('#bar').css('background', darkColor);
 	
 	// Common vars
