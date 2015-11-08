@@ -4,7 +4,7 @@
 <title>Gareth Walters</title>
 <meta name="description" content="Contact &amp; portfolio information for Gareth Walters.">
 <meta name="author" content="Gareth Walters">
-<link rel="stylesheet" href="css/style.css?v=20120923">
+<link rel="stylesheet" href="css/style.css?v=20151107">
 <script>
 	var _gaq=[['_setAccount','UA-4308479-6'],['_trackPageview']];
 	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
@@ -17,29 +17,28 @@
 <div id="bar"></div>
 <div id="core">
 	<div id="card-holder">
-		<script>
-			<div id="card">
-				<div id="select-lt" class="selector" style="left: -32px; top: -32px; opacity: 0;">
-					<div class="select-line select-left"></div>
-					<div class="select-line select-top"></div>
-				</div>
-				<div id="select-rt" class="selector" style="right: -32px; top: -32px; opacity: 0;">
-					<div class="select-line select-right"></div>
-					<div class="select-line select-top"></div>
-				</div>
-				<div id="select-lb" class="selector" style="left: -32px; bottom: -32px; opacity: 0;">
-					<div class="select-line select-left"></div>
-					<div class="select-line select-bottom"></div>
-				</div>
-				<div id="select-rb" class="selector" style="right: -32px; bottom: -32px; opacity: 0;">
-					<div class="select-line select-right"></div>
-					<div class="select-line select-bottom"></div>
-				</div>
+		<div id="card">
+			<div id="select-lt" class="selector" style="left: -32px; top: -32px; opacity: 0;">
+				<div class="select-line select-left"></div>
+				<div class="select-line select-top"></div>
 			</div>
-			<a href="mailto:g@rethwalte.rs" onclick="javascript: _gaq.push(['_trackPageview', '/email/g@rethwalte.rs']);" id="card-link">
-				<img id="link-area" src="images/garethwalters-rs.png" />
-			</a>
-		</script>
+			<div id="select-rt" class="selector" style="right: -32px; top: -32px; opacity: 0;">
+				<div class="select-line select-right"></div>
+				<div class="select-line select-top"></div>
+			</div>
+			<div id="select-lb" class="selector" style="left: -32px; bottom: -32px; opacity: 0;">
+				<div class="select-line select-left"></div>
+				<div class="select-line select-bottom"></div>
+			</div>
+			<div id="select-rb" class="selector" style="right: -32px; bottom: -32px; opacity: 0;">
+				<div class="select-line select-right"></div>
+				<div class="select-line select-bottom"></div>
+			</div>
+		</div>
+		<a href="mailto:g@rethwalte.rs" onclick="javascript: _gaq.push(['_trackPageview', '/email/g@rethwalte.rs']);" id="card-link">
+			<img id="link-area" src="images/garethwalters-rs.png" />
+		</a>
+
 		<noscript>
 			<img id="link-area" src="images/garethwalters-rs.png" />
 		</noscript>
@@ -48,8 +47,27 @@
 		<p>
 			Designing &amp; engineering apps for the iOS platform.<br>
 			Residing in Los Angeles; working on a per-project basis.<br>
+			For project inqueries, please fill out the form below.
 		</p>
 	</div>
+	<form id="contact" method="post" action="mailer.php">
+	    <div class="field">
+	        <label for="name">Name</label><br>
+	        <input type="text" id="name" name="name" required>
+	    </div>
+	    <div class="field">
+	        <label for="email">Email</label><br>
+	        <input type="email" id="email" name="email" required>
+	    </div>
+	    <div class="field">
+	        <label for="message">Project details</label><br>
+	        <textarea id="message" name="message" required></textarea>
+	    </div>
+	    <div id="submit-field" class="field">
+	        <button id="submit-button" type="submit">Send</button>
+	    </div>
+	</form>
+	<div id="form-messages"></div>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js">\x3C/script>')</script>
